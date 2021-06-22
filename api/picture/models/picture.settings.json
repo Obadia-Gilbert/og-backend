@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pictures",
+  "info": {
+    "name": "Picture",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Photolink": {
+      "type": "text"
+    },
+    "categories": {
+      "collection": "article",
+      "via": "pictures",
+      "dominant": true
+    }
+  }
+}
