@@ -2,7 +2,7 @@
 # OS X
 ############################
 
-.DS_Store
+# .DS_Store
 .AppleDouble
 .LSOverride
 Icon
@@ -67,9 +67,9 @@ $RECYCLE.BIN/
 
 .tmp
 *.log
-*.sql
-*.sqlite
-*.sqlite3
+#*.sql
+#*.sqlite
+#*.sqlite3
 
 
 ############################
@@ -80,8 +80,8 @@ $RECYCLE.BIN/
 ssl
 .idea
 nbproject
-public/uploads/*
-!public/uploads/.gitkeep
+#public/uploads/*
+#!public/uploads/.gitkeep
 
 ############################
 # Node.js

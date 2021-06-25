@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/slideshow",
+      "handler": "slideshow.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/slideshow",
+      "handler": "slideshow.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/slideshow",
+      "handler": "slideshow.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "slideshows",
+  "info": {
+    "name": "Slideshow",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "post": {
+      "model": "posts"
+    },
+    "ShowcaseImage": {
+      "type": "string"
+    }
+  }
+}
