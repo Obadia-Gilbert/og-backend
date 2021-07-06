@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "abouts",
   "info": {
-    "name": "About"
+    "name": "About",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,6 +14,35 @@
   "attributes": {
     "AboutMe": {
       "type": "richtext"
+    },
+    "AboutSite": {
+      "type": "string"
+    },
+    "Vission": {
+      "type": "richtext"
+    },
+    "Mission": {
+      "type": "richtext"
+    },
+    "FullName": {
+      "type": "string"
+    },
+    "Designation": {
+      "type": "string"
+    },
+    "Bio": {
+      "type": "string"
+    },
+    "CoverPhotoLink": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Laserfiche",
+        "Gaming",
+        "Video"
+      ]
     }
   }
 }

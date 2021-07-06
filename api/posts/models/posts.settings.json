@@ -39,6 +39,14 @@
     },
     "CoverPhoto": {
       "type": "text"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Laserfiche",
+        "Gaming",
+        "Videos"
+      ]
     }
   }
 }

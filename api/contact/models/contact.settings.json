@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "Contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "facebook_Link": {
+      "type": "string"
+    },
+    "instagram_Link": {
+      "type": "string"
+    },
+    "twitter_Link": {
+      "type": "string"
+    },
+    "linkedin_Link": {
+      "type": "string"
+    }
+  }
+}
