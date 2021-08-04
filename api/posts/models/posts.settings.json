@@ -34,8 +34,8 @@
       "dominant": true
     },
     "comments": {
-      "collection": "comment",
-      "via": "post"
+      "via": "post",
+      "collection": "comment"
     },
     "CoverPhoto": {
       "type": "text"
@@ -47,6 +47,11 @@
         "Gaming",
         "Videos"
       ]
+    },
+    "videos": {
+      "collection": "video",
+      "via": "posts",
+      "dominant": true
     }
   }
 }

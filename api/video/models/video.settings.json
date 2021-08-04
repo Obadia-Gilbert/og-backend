@@ -25,6 +25,10 @@
       "collection": "article",
       "via": "videos",
       "dominant": true
+    },
+    "posts": {
+      "via": "videos",
+      "collection": "posts"
     }
   }
 }
