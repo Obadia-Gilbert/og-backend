@@ -1,38 +1,25 @@
+const parse = require('pg-connection-string').parse;
+ const config = parse('postgresql://db:qz3k9ac8yvf7eez8@app-bebe175d-781b-47cb-8695-aa8af67a45a0-do-user-8673776-0.b.db.ondigitalocean.com:25060/db?sslmode=require');
+
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
     default: {
       connector: 'bookshelf',
       settings: {
-        client: 'sqlite',
-        filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+        client: 'postgres',
+        host: 'app-bebe175d-781b-47cb-8695-aa8af67a45a0-do-user-8673776-0.b.db.ondigitalocean.com',
+        port: '25060',
+        database: 'db',
+        username: 'db',
+        password: 'qz3k9ac8yvf7eez8',
+        ssl: {
+          rejectUnauthorized: false,
+        },
       },
       options: {
-        useNullAsDefault: true,
+        ssl: true,
       },
     },
   },
 });
-
-
-// module.exports = ({ env }) => ({
-//   defaultConnection: 'default',
-//   connections: {
-//     default: {
-//       connector: 'bookshelf',
-//       settings: {
-//         client: 'postgres',
-//         host: env('DATABASE_HOST', 'localhost'),
-//         port: env.int('DATABASE_PORT', 5432),
-//         database: env('DATABASE_NAME', 'og'),
-//         username: env('DATABASE_USERNAME', 'postgres'),
-//         password: env('DATABASE_PASSWORD', 'postgres'),
-//         schema: env('DATABASE_SCHEMA', 'public'), // Not Required
-//         ssl: {
-//           rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), // For self-signed certificates
-//         },
-//       },
-//       options: {},
-//     },
-//   },
-// });
