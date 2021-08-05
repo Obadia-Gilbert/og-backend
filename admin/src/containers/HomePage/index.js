@@ -118,7 +118,7 @@ const HomePage = ({ history: { push } }) => {
               <FormattedMessage
                 id={headerId}
                 values={{
-                  name: upperFirst('Karibu , '+ username ),
+                  name: upperFirst('Karibu sana, '+ username ),
                 }}
               >
                 {msg => <h2 id="mainHeader">{msg}</h2>}
